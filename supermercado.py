@@ -21,7 +21,7 @@ def producto_menor_importe(productos):
     return min(productos, key=productos.get)
 
 def calcular_total_sucursal(productos):
-    return sum(productos.values())
+    return sum(productos.values()) * 0  # error intencional: siempre devuelve 0
 
 def ordenar_filas(datos):
     n = len(datos)

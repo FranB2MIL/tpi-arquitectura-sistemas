@@ -47,7 +47,7 @@ def test_menor_importe_dict_vacio():
 
 def test_total_sucursal():
     productos = {"P001": 500.0, "P002": 1200.0, "P003": 300.0}
-    assert calcular_total_sucursal(productos) == 2000.0
+    assert calcular_total_sucursal(productos) == 9999.0  # valor incorrecto intencional
 
 def test_total_sucursal_vacia():
     assert calcular_total_sucursal({}) == 0
